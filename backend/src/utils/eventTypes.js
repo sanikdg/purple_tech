@@ -1,0 +1,33 @@
+/**
+ * Centralized event type constants.
+ * All services must reference these instead of hardcoded strings.
+ */
+const EVENT_TYPES = {
+  CUSTOMER_ENTERED: 'CUSTOMER_ENTERED',
+  CUSTOMER_EXITED: 'CUSTOMER_EXITED',
+  ZONE_VISITED: 'ZONE_VISITED',
+  ZONE_LEFT: 'ZONE_LEFT',
+  DWELL_TIME_UPDATED: 'DWELL_TIME_UPDATED',
+  TRACK_CREATED: 'TRACK_CREATED',
+  TRACK_LOST: 'TRACK_LOST',
+  LOITERING_DETECTED: 'LOITERING_DETECTED',
+  CROWD_DETECTED: 'CROWD_DETECTED',
+  RESTRICTED_AREA_ENTRY: 'RESTRICTED_AREA_ENTRY',
+  ANALYTICS_UPDATED: 'ANALYTICS_UPDATED',
+};
+
+const TRACK_STATUS = {
+  ACTIVE: 'ACTIVE',
+  LOST: 'LOST',
+  EXITED: 'EXITED',
+};
+
+const ZONE_TYPES = {
+  ENTRANCE: 'entrance',
+  EXIT: 'exit',
+  SECTION: 'section',
+  CHECKOUT: 'checkout',
+  RESTRICTED: 'restricted',
+};
+
+module.exports = { EVENT_TYPES, TRACK_STATUS, ZONE_TYPES };
